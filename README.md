@@ -43,6 +43,7 @@ This is a reporting project for a newspaper site, with the database behind it. T
     #### vagrant@vagrant:/vagrant/logs-analysis$ psql -d news -f newsdata.sql
 
 The database includes following three tables:
+
 | Table | Content |
 | ------ | ------ | 
 | authors | information about the authors of articles |
