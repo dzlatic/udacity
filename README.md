@@ -13,7 +13,6 @@ c) README.md - this file
 d) output.txt - expected run output
 
 ## Dependencies
-
 Python 3.6.6 [download](https://www.python.org/downloads/release/python-366/)
 VirtualBox Version 5.2.16 [download](https://download.virtualbox.org/virtualbox/5.2.16/)
 Vagrant 2.1.2: Use this [link] (https://releases.hashicorp.com/vagrant/2.1.2/) to download it and attached Vagrantfile to configoure it.
@@ -23,16 +22,16 @@ Vagrant 2.1.2: Use this [link] (https://releases.hashicorp.com/vagrant/2.1.2/) t
 1. Download database from this [link](https://d17h27t6h515a5.cloudfront.net/topher/2016/August/57b5f748_newsdata/newsdata.zip)
 
 2. Start virtual machine with command
-vagrant up
+### vagrant up
 
 3. Connect to virtial machine with command:
-vagrant ssh
+### vagrant ssh
 
 4. Move to the working directory:
-### cd /vagrant
+### vagrant@vagrant:/vagrant/logs-analysis$ cd /vagrant
 
 5. Load data with command:
-### psql -d news -f newsdata.sql
+### vagrant@vagrant:/vagrant/logs-analysis$ psql -d news -f newsdata.sql
 The database includes following three tables:
 authors table - includes information about the authors of articles.
 articles table - includes the articles themselves.
