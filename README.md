@@ -23,7 +23,7 @@ This is a reporting project for a newspaper site, with the database behind it. T
 | ------ | ------ | ------ |
 | Python | 3.6.6 | [link](https://www.python.org/downloads/release/python-366/) |
 | VirtualBox | 5.2.16 | [link](https://download.virtualbox.org/virtualbox/5.2.16/) |
-| Vagrant | 2.1.2 | [link] (https://releases.hashicorp.com/vagrant/2.1.2/) |
+| Vagrant | 2.1.2 | [link](https://releases.hashicorp.com/vagrant/2.1.2/) |
 
 
 ## Setup and run instructions:
