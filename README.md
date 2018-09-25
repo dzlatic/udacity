@@ -7,10 +7,15 @@ This is a reporting project for a newspaper site, with the database behind it. T
 3. Days when more than 1% of requests lead to errors
 
 ## Included files
-a) logs-analysis.py - python code
-b) Vagrantfile - Vagrant configuration file
-c) README.md - this file
-d) output.txt - expected run output
+
+
+| File | Comment |
+| ------ | ------ |
+| logs-analysis.py | python code |
+| Vagrantfile | Vagrant configuration file |
+| README.md | this file |
+| output.txt | expected run output |
+
 
 ## Dependencies
 Python 3.6.6 [download](https://www.python.org/downloads/release/python-366/)
