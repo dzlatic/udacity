@@ -42,13 +42,13 @@ This is a reporting project for a newspaper site, with the database behind it. T
 5. Load data with command:
     #### vagrant@vagrant:/vagrant/logs-analysis$ psql -d news -f newsdata.sql
 
-The database includes following three tables:
+        The database includes following three tables:
 
-| Table | Content |
-| ------ | ------ | 
-| authors | information about the authors of articles |
-| articles | the news articles |
-| log | includes one entry for each time a user has accessed the site |
+        | Table | Content |
+        | ------ | ------ | 
+        | authors | information about the authors of articles |
+        | articles | the news articles |
+        | log | includes one entry for each time a user has accessed the site |
 
 6. in PSQL execute following SQL command to create a helper view path_slug:
     #### CREATE VIEW path_slug AS	
