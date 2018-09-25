@@ -30,7 +30,7 @@ This is a reporting project for a newspaper site, with the database behind it. T
 
 1. Download database from this [link](https://d17h27t6h515a5.cloudfront.net/topher/2016/August/57b5f748_newsdata/newsdata.zip)
 
-2. Start virtual machine with command
+2. Start virtual machine with command:
     #### vagrant up
 
 3. Connect to virtial machine with command:
@@ -42,21 +42,21 @@ This is a reporting project for a newspaper site, with the database behind it. T
 5. Load data with command:
     #### vagrant@vagrant:/vagrant/logs-analysis$ psql -d news -f newsdata.sql
 
-        The database includes following three tables:
+6. Check the database includes following three tables:
 
-        | Table | Content |
-        | ------ | ------ | 
-        | authors | information about the authors of articles |
-        | articles | the news articles |
-        | log | includes one entry for each time a user has accessed the site |
+| Table | Content |
+| ------ | ------ | 
+| authors | information about the authors of articles |
+| articles | the news articles |
+| log | includes one entry for each time a user has accessed the site |
 
-6. in PSQL execute following SQL command to create a helper view path_slug:
+7. In PSQL prompt execute following SQL command to create the first helper view:
     #### CREATE VIEW path_slug AS	
     #### SELECT DISTINCT log.path as path, articles.slug as slug 
     #### FROM log, articles
     #### WHERE position(articles.slug in log.path) > 0
 
-7. in PSQL execute following SQL command to create a helper view article_stat:
+8. In PSQL prompt execute following SQL command to create a second helper view:
     #### CREATE VIEW article_stat AS
     #### SELECT articles.id as id, count(log.path) as count
     #### FROM log, path_slug, articles
@@ -64,5 +64,7 @@ This is a reporting project for a newspaper site, with the database behind it. T
     #### path_slug.path = log.path
     #### GROUP BY articles.id
 
-8. Run the project code by executing following command on operting system prompt:
+9. Run the project code by executing following command on operting system prompt:
     #### vagrant@vagrant:/vagrant/logs-analysis$ python3 logs-analysis.py
+
+10. Compare the output with the content of output.txt file.
