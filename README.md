@@ -44,7 +44,7 @@ This is a reporting project for a newspaper site, with the database behind it. T
 
 The database includes following three tables:
 | Table | Content |
-| ------ | ------ | ------ |
+| ------ | ------ | 
 | authors | information about the authors of articles |
 | articles | the news articles |
 | log | includes one entry for each time a user has accessed the site |
